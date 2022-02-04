@@ -1,0 +1,87 @@
+@import "resset.scss";
+
+//$black: #000000;
+//$orange: #FF6336;
+
+// @mixin regular() {
+//   font-family: 'Montserrat', sans-serif;
+//   font-weight: 400;
+// }
+
+// @mixin semiBold() {
+//   font-family: 'Montserrat', sans-serif;
+//   font-weight: 600;
+// }
+
+@import "400-575.scss";
+@import "576-767.scss";
+@import "768-991.scss";
+@import "992-1199.scss";
+
+.container {
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+
+
+.calc {
+    &__container {
+        margin-top: 100px;
+        }
+    &__output {
+        background: #000;
+        color: white;
+        text-align: right;
+        min-height: 70px;
+        font-size: 25px;
+        border-radius: 10px 10px 0px 0px;
+        padding: 5px 10px 5px 5px;
+        margin-bottom: 2px;
+    }
+
+    &__input {
+        width: 100%;
+        background: blueviolet;
+        border-radius: 0px 0px 5px 5px;
+    }
+    &__operation {
+        margin-bottom: 20px;
+        font-size: 18px;
+        opacity: 0.6;
+    }
+
+}
+
+.input {
+    &__row {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            text-align: center;
+
+    }
+
+    &__row:not(:last-child) {
+        margin-bottom: 2px;
+    }
+}
+
+.btn {
+    flex: 0 1 25%;
+    display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            min-height: 40px;
+            background: black;
+            color: white;
+            cursor: pointer;
+            font-size: 20px;
+            border-radius: 5px;
+            
+}
+
+.btn:not(:last-child) {
+    margin-right: 2px;
+}
